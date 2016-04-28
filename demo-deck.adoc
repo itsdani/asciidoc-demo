@@ -14,12 +14,12 @@
 [.topic]
 == Több féle dokumentáció kell
 [.incremental]
-* Informális wiki (pl. github)
+* Informális wiki
 ** Markdown
-* Formális dokumentáció (pdf)
-** Latex
-* Egyéb dokumentumok (e-book, slideshow, stb.)
-** Office (Word, Powerpoint)
+* Formális dokumentáció
+** LaTeX
+* Egyéb dokumentumok
+** Office (Word, PowerPoint)
 
 [.intro.alt]
 == cél
@@ -81,7 +81,7 @@
 
 [.topic]
 == LaTeX
-* Magas minőség
+* Jó minőségű dokumentumok
 [.incremental]
 ** Tudományos cikkek
 ** Wikik nem támogatják
@@ -89,8 +89,9 @@
 
 [.topic]
 == DocBook
-* Hordozhatónak tervezve
+* Sokoldalúra tervezve
 [.incremental]
+** Cikkek, könyvek, jegyzetek
 ** Sok funkció
 ** Sok támogató eszköz
 ** *XML* alapú
@@ -102,8 +103,36 @@
 ** Markdownhoz hasonlít
 ** Alap szinten egyszerű
 ** Rengeteg funkció
-** DocBook eszközök
+** Bővíthető
+** Wiki támogatás
 
+[.topic]
+== Asciidoc
+* Kitűnő editorok
+[.incremental]
+** Atom
+** Brackets
+** Emacs
+** http://asciidoclive.com[asciidoclive.com]
+
+[.topic]
+== Asciidoc
+* Automatizálás!
+[.incremental]
+** Asciidoctor, Jenkins
+** JRuby, Java kódból
+** Maven és Gradle plugin
+
+
+[.topic]
+== Ki használja még?
+* Sokan!
+[.incremental]
+** Git
+** Neo4j
+** Atom editor
+** Viatra
+** Ez a prezentáció
 
 [.topic.ending]
 == Vége!
@@ -119,21 +148,3 @@
 * masodik
 * harmadik
 
-// [.topic.source]
-// == Source
-
-// [source,asciidoc]
-// --
-// == Cím
-// === Alcím
-// * lista
-// * több
-// ** szintű
-// *** lista
-// --
-
-// == Cím
-// * lista
-// * több
-// ** szintű
-// *** lista
