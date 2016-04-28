@@ -12,13 +12,13 @@
 == motiváció
 
 [.topic]
-== több féle dokumentáció kell
+== Több féle dokumentáció kell
 [.incremental]
-* informális wiki (pl. github)
+* Informális wiki (pl. github)
 ** Markdown
-* formális dokumentáció (pdf)
+* Formális dokumentáció (pdf)
 ** Latex
-* egyéb dokumentumok (e-book, slideshow, stb.)
+* Egyéb dokumentumok (e-book, slideshow, stb.)
 ** Office (Word, Powerpoint)
 
 [.intro.alt]
@@ -33,68 +33,95 @@
 [.topic]
 == Elvárt funkciók
 [.incremental]
-* kereszthivatkozások
-* táblázatok
-* képaláírások
-* irodalomjegyzék
-* "elég jól testreszabható"
+* Kereszthivatkozások
+* Táblázatok
+* Képaláírások
+* Irodalomjegyzék
+* "Elég jól testreszabható"
+
+[.intro.alt]
+== versenyzők
+[.incremental]
+* WYSIWYG
+* Markup nyelvek
 
 [.topic]
-== Versenyzők
+== WYSIWYG
 
-* WYSIWYG
 * What you see is what you get
 [.incremental]
 ** MS Word, Libre Office, Google Docs
-** online kollaboráció
-** mindeki tudja használni
-** kevesen tudják *jól* használni
-** minden szükséges funkció megvan
-** nem hordozható (wiki)
+** Online kollaboráció
+** Mindeki tudja használni
+** Kevesen tudják *jól* használni
+** Minden szükséges funkció megvan
+** Nem hordozható (wiki)
 
 
 [.topic]
-== Versenyzők
-* Markup nyelvek
+== Markup nyelvek
+* Egyszerű szöveges fájlok
 [.incremental]
+** Könnyen, gyorsan szerkeszthetők
+** Generált formázott dokumentumok (html, pdf, stb...)
+** Egységes stílus (css)
+** Kollaboráció verziókezelőkkel (git)
+** Változó mennyiségű funkciók
 ** Markdown, DocBook, Asciidoc, stb.
-** egyszerű szöveges fájlok
-** könnyen, gyorsan szerkeszthető
-** generált formázott dokumentumok (html, pdf, stb...)
-** egységes stílus (css)
-** kollaboráció verziókezelőkkel (git)
-** változó funkciók
 
 [.topic]
 == Markdown
-[.incremental]
-* Github wiki alapértelmezés
 * nagyon egyszerű :)
-* hiányzó funkciók
 [.incremental]
-** képaláírás
-** táblázat formázás
-** irodalomjegyzék
+** GitHub wiki alapértelmezés
+** Hiányzó funkciók :(
+** Képaláírás
+** Táblázat formázás
+** Irodalomjegyzék
 
+[.topic]
+== LaTeX
+* Magas minőség
+[.incremental]
+** Tudományos cikkek
+** Wikik nem támogatják
+** Nem olyan egyszerű
 
-[.topic.source]
-== Source
+[.topic]
+== DocBook
+* Hordozhatónak tervezve
+[.incremental]
+** Sok funkció
+** Sok támogató eszköz
+** *XML* alapú
 
-[source,asciidoc]
---
-== Cím
-=== Alcím
-* lista
-* több
-** szintű
-*** lista
---
+[.topic]
+== Asciidoc
+* DocBook egyszerűen
+[.incremental]
+** Markdownhoz hasonlít
+** Alap szinten egyszerű
+** Rengeteg funkció
+** DocBook eszközök
 
-== Cím
-* lista
-* több
-** szintű
-*** lista
+// [.topic.source]
+// == Source
+
+// [source,asciidoc]
+// --
+// == Cím
+// === Alcím
+// * lista
+// * több
+// ** szintű
+// *** lista
+// --
+
+// == Cím
+// * lista
+// * több
+// ** szintű
+// *** lista
 
 [.topic.ending]
-== Fin!
+== Vége!
