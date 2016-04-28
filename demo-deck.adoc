@@ -1,5 +1,5 @@
-= Asciidoc for writing documents
-Dániel Segesdi
+= Asciidoc használata dokumentáció készítéshez
+// Segesdi Dániel
 :backend: dzslides
 :dzslides-style: stormy
 :dzslides-transition: fade
@@ -7,19 +7,23 @@ Dániel Segesdi
 :dzslides-highlight: monokai
 :source-highlighter: highlightjs
 
-// :backend: deckjs
-// web-2.0, neon, swiss
-// :deckjs_theme: neon
-// :encoding: utf-8
-// :deckjs_transition: horizontal-slide
-// :navigation:
+[.intro]
+== motiváció
 
-[.topic.intro]
-== Intro
+[.topic]
+== több féle dokumentáció kell
+[.incremental]
+* Github-wiki
+* formális dokumentáció (pdf)
+* más formátumok (e-book, slideshow, etc.)
 
 == !
 
+
 *Title*
+[.incremental]
+* esetleg itt?
+* hello
 
 == !
 

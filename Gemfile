@@ -5,6 +5,9 @@ gem 'asciidoctor', '1.5.4'
 
 gem 'guard'
 gem 'guard-shell'
+gem 'guard-livereload'
+#gem 'livereload'
+#gem 'rb-inotify'
 
 gem 'tilt'
 gem 'haml'
