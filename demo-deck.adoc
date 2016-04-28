@@ -104,6 +104,10 @@
 ** Rengeteg funkció
 ** DocBook eszközök
 
+[.topic.ending]
+== Vége!
+
+
 // [.topic.source]
 // == Source
 
@@ -122,6 +126,3 @@
 // * több
 // ** szintű
 // *** lista
-
-[.topic.ending]
-== Vége!
