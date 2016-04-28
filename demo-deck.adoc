@@ -65,7 +65,7 @@
 ** kollaboráció verziókezelőkkel (git)
 ** változó funkciók
 
-[.secret]
+[.topic]
 == Markdown
 [.incremental]
 * Github wiki alapértelmezés

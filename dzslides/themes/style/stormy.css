@@ -40,7 +40,7 @@
 html, .view body {
   background: #333333 url(../../images/gray-noise.png) repeat;
   counter-reset: slideidx;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body, .view section {
