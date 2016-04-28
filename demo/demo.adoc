@@ -13,9 +13,10 @@ NOTE: ne felejtsd el `:icons: font`
 * táblázat
 ** cella összevonás
 ** cella formázások
-* kép
-* link
 * kereszthivatkozás
 ** pdf/html/github
+** include
+* kép
+* link
 * tartalomjegyzék
 * kód blokk, színezés
