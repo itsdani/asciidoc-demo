@@ -3,7 +3,8 @@
 :backend: dzslides
 :dzslides-style: stormy
 :dzslides-transition: fade
-:dzslides-fonts: family=Yanone+Kaffeesatz:400,700,200,300&family=Cedarville+Cursive
+// :dzslides-fonts: family=Yanone+Kaffeesatz:400,700,200,300&family=Cedarville+Cursive
+:dzslides-fonts: family=Roboto
 :dzslides-highlight: monokai
 :source-highlighter: highlightjs
 
@@ -13,31 +14,87 @@
 [.topic]
 == több féle dokumentáció kell
 [.incremental]
-* Github-wiki
+* informális wiki (pl. github)
+** Markdown
 * formális dokumentáció (pdf)
-* más formátumok (e-book, slideshow, etc.)
+** Latex
+* egyéb dokumentumok (e-book, slideshow, stb.)
+** Office (Word, Powerpoint)
 
-== !
-
-
-*Title*
-[.incremental]
-* esetleg itt?
-* hello
-
-== !
+[.intro.alt]
+== cél
 
 [.incremental]
-* dzslides
-* deckjs
+* hordozhatóság
+* kollaboráció
+* könnyű szerkeszteni
+* megfelelő funkciók
+
+[.topic]
+== Elvárt funkciók
+[.incremental]
+* kereszthivatkozások
+* táblázatok
+* képaláírások
+* irodalomjegyzék
+* "elég jól testreszabható"
+
+[.topic]
+== Versenyzők
+
+* WYSIWYG
+* What you see is what you get
+[.incremental]
+** MS Word, Libre Office, Google Docs
+** online kollaboráció
+** mindeki tudja használni
+** kevesen tudják *jól* használni
+** minden szükséges funkció megvan
+** nem hordozható (wiki)
+
+
+[.topic]
+== Versenyzők
+* Markup nyelvek
+[.incremental]
+** Markdown, DocBook, Asciidoc, stb.
+** egyszerű szöveges fájlok
+** könnyen, gyorsan szerkeszthető
+** generált formázott dokumentumok (html, pdf, stb...)
+** egységes stílus (css)
+** kollaboráció verziókezelőkkel (git)
+** változó funkciók
+
+[.secret]
+== Markdown
+[.incremental]
+* Github wiki alapértelmezés
+* nagyon egyszerű :)
+* hiányzó funkciók
+[.incremental]
+** képaláírás
+** táblázat formázás
+** irodalomjegyzék
+
 
 [.topic.source]
 == Source
 
-[source,ruby]
+[source,asciidoc]
 --
-puts 'Hello, World!'
+== Cím
+=== Alcím
+* lista
+* több
+** szintű
+*** lista
 --
+
+== Cím
+* lista
+* több
+** szintű
+*** lista
 
 [.topic.ending]
 == Fin!

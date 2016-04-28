@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" class="aspect-4-3"><head><meta charset="UTF-8"><meta name="generator" content="Asciidoctor 1.5.4, dzslides backend"><title>Asciidoc használata dokumentáció készítéshez</title><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,200,300&amp;family=Cedarville+Cursive"><style>
+<!DOCTYPE html><html lang="en" class="aspect-4-3"><head><meta charset="UTF-8"><meta name="generator" content="Asciidoctor 1.5.4, dzslides backend"><title>Asciidoc használata dokumentáció készítéshez</title><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto"><style>
 /*
 Monokai style - ported by Luigi Maselli - http://grigio.org
 */
@@ -168,7 +168,8 @@ pre .xml .cdata {
 html, .view body {
   background: #333333 url(../../images/gray-noise.png) repeat;
   counter-reset: slideidx;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Yanone Kaffeesatz', sans-serif; */
 }
 
 body, .view section {
@@ -1105,11 +1106,19 @@ section {
   transition: opacity 450ms ease-out 0ms;
 }
 </style></head><body><section class="title"><h1>Asciidoc használata dokumentáció készítéshez</h1><footer><span class="author"></span></footer></section><section class="intro"><h2>motiváció</h2></section>
-<section class="topic"><h2>több féle dokumentáció kell</h2><ul class="incremental"><li>Github-wiki</li><li>formális dokumentáció (pdf)</li><li>más formátumok (e-book, slideshow, etc.)</li></ul></section>
-<section><p><strong>Title</strong></p>
-<ul class="incremental"><li>esetleg itt?</li><li>hello</li></ul></section>
-<section><ul class="incremental"><li>dzslides</li><li>deckjs</li></ul></section>
-<section class="topic source"><h2>Source</h2><div class="listingblock"><pre class="highlight"><code class="ruby">puts 'Hello, World!'</code></pre></div></section>
+<section class="topic"><h2>több féle dokumentáció kell</h2><ul class="incremental"><li>informális wiki (pl. github)<ul><li>Markdown</li></ul></li><li>formális dokumentáció (pdf)<ul><li>Latex</li></ul></li><li>egyéb dokumentumok (e-book, slideshow, stb.)<ul><li>Office (Word, Powerpoint)</li></ul></li></ul></section>
+<section class="intro alt"><h2>cél</h2><ul class="incremental"><li>hordozhatóság</li><li>kollaboráció</li><li>könnyű szerkeszteni</li><li>megfelelő funkciók</li></ul></section>
+<section class="topic"><h2>Elvárt funkciók</h2><ul class="incremental"><li>kereszthivatkozások</li><li>táblázatok</li><li>képaláírások</li><li>irodalomjegyzék</li><li>"elég jól testreszabható"</li></ul></section>
+<section class="topic"><h2>Versenyzők</h2><ul><li>WYSIWYG</li><li>What you see is what you get<ul class="incremental"><li>MS Word, Libre Office, Google Docs</li><li>online kollaboráció</li><li>mindeki tudja használni</li><li>kevesen tudják <strong>jól</strong> használni</li><li>minden szükséges funkció megvan</li><li>nem hordozható (wiki)</li></ul></li></ul></section>
+<section class="topic"><h2>Versenyzők</h2><ul><li>Markup nyelvek<ul class="incremental"><li>Markdown, DocBook, Asciidoc, stb.</li><li>egyszerű szöveges fájlok</li><li>könnyen, gyorsan szerkeszthető</li><li>generált formázott dokumentumok (html, pdf, stb&#8230;&#8203;)</li><li>egységes stílus (css)</li><li>kollaboráció verziókezelőkkel (git)</li><li>változó funkciók</li></ul></li></ul></section>
+<section class="secret"><h2>Markdown</h2><ul class="incremental"><li>Github wiki alapértelmezés</li><li>nagyon egyszerű :)</li><li>hiányzó funkciók<ul class="incremental"><li>képaláírás</li><li>táblázat formázás</li><li>irodalomjegyzék</li></ul></li></ul></section>
+<section class="topic source"><h2>Source</h2><div class="listingblock"><pre class="highlight"><code class="asciidoc">== Cím
+=== Alcím
+* lista
+* több
+** szintű
+*** lista</code></pre></div></section>
+<section><h2>Cím</h2><ul><li>lista</li><li>több<ul><li>szintű<ul><li>lista</li></ul></li></ul></li></ul></section>
 <section class="topic ending"><h2>Fin!</h2></section><script>
 //   __  __  __       .  __   ___  __
 //  |  \  / /__` |    | |  \ |__  /__`
