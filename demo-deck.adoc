@@ -104,9 +104,20 @@
 ** Rengeteg funkció
 ** DocBook eszközök
 
+
 [.topic.ending]
 == Vége!
 
+[.topic]
+== Majdnem
+[.incremental]
+* elso
+[.incremental]
+** alma
+** korte
+** barack
+* masodik
+* harmadik
 
 // [.topic.source]
 // == Source
