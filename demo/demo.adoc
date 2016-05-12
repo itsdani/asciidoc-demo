@@ -5,7 +5,8 @@ Daniel Segesdi
 // :pygments-style: monokai
 // HIGHLIGHTJS
 :source-highlighter: highlightjs
-:highlightjs-theme: monokai
+//:highlightjs-theme: solarized-dark
+:highlightjs-theme: tomorrow
 :highlightjsdir: highlight.js
 // :linkcss:
 
@@ -55,7 +56,7 @@ pattern sendTransitionAppSignal(transition, app, signal) {
 [[app-listing]]
 [source,vql]
 ----
-pattern emptyIpAddress(host: HostInstance) {
+pattern emptyIpAddress(host: HostInstance, thisIsNotUsed: Object) {
     HostInstance.nodeIp(host, "thisIsEmpty");
 }
 
@@ -81,12 +82,12 @@ pattern sendTransitionAppSignal(transition, app, signal) {
 [source,java]
 ----
 // Hello highlight comment
-@Data
+@Data(hohohohho="alma")
 class BasicClass extends God implements BasicInterface{
   private static String EMPHASIS = "!!!!!!!!"
 
   @Override
-  public void doSomethingYouWant(int anInteger, InterfaceManagerProviderFactory factory){
+  public OtherInterface doSomethingYouWant(int anInteger, InterfaceManagerProviderFactory factory){
     if(anInteger > 10){
       factory.createInterfaceManagerProvider(getProviderDependency(anInteger));
     } else {

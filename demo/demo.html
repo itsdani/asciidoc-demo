@@ -495,7 +495,7 @@ pattern sendTransitionAppSignal(transition, app, signal) {
 <div id="app-listing" class="listingblock">
 <div class="title">vql with language specified</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-vql" data-lang="vql">pattern emptyIpAddress(host: HostInstance) {
+<pre class="highlightjs highlight"><code class="language-vql" data-lang="vql">pattern emptyIpAddress(host: HostInstance, thisIsNotUsed: Object) {
     HostInstance.nodeIp(host, "thisIsEmpty");
 }
 
@@ -520,12 +520,12 @@ pattern sendTransitionAppSignal(transition, app, signal) {
 <div class="title">Java code for reference</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-java" data-lang="java">// Hello highlight comment
-@Data
+@Data(hohohohho="alma")
 class BasicClass extends God implements BasicInterface{
   private static String EMPHASIS = "!!!!!!!!"
 
   @Override
-  public void doSomethingYouWant(int anInteger, InterfaceManagerProviderFactory factory){
+  public OtherInterface doSomethingYouWant(int anInteger, InterfaceManagerProviderFactory factory){
     if(anInteger &gt; 10){
       factory.createInterfaceManagerProvider(getProviderDependency(anInteger));
     } else {
@@ -597,10 +597,10 @@ ne felejtsd el <code>:icons: font</code>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-05-12 14:02:04 CEST
+Last updated 2016-05-12 17:05:44 CEST
 </div>
 </div>
-<link rel="stylesheet" href="highlight.js/styles/monokai.min.css">
+<link rel="stylesheet" href="highlight.js/styles/tomorrow.min.css">
 <script src="highlight.js/highlight.min.js"></script>
 <script>hljs.initHighlighting()</script>
 </body>
