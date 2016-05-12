@@ -7,7 +7,7 @@ Daniel Segesdi
 :source-highlighter: highlightjs
 :highlightjs-theme: monokai
 :highlightjsdir: highlight.js
-:linkcss:
+// :linkcss:
 
 == Syntax highlight
 
