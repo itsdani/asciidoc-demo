@@ -1,11 +1,99 @@
 = Asciidoc demo
 Daniel Segesdi
+// PYGMENTS
+// :source-highlighter: pygments
+// :pygments-style: monokai
+// HIGHLIGHTJS
+:source-highlighter: highlightjs
+:highlightjs-theme: monokai
+:highlightjsdir: highlight.js
+:linkcss:
+
+== Syntax highlight
+
+=== Tools
+
+==== highlight.js
+* It's working!
+* Documentation
 
 
-== Cím
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+==== Pygments
 
-=== Todo
+==== Google Prettify
+
+==== Coderay
+* Ruby
+* Developed by a single person
+* Aims to be high quality
+
+=== Examples
+
+.vql without language specified
+[[app-listing]]
+[source]
+----
+pattern emptyIpAddress(host: HostInstance) {
+    HostInstance.nodeIp(host, "");
+}
+
+@Format(color = "#00F8EF", textColor = "#000000")
+@Item(item = state, label = "State $state.description$")
+pattern depoymentStateItem(state) {
+  BehaviorState(state);
+  neg find depoymentCurrentStateItem(state);
+}
+
+pattern sendTransitionAppSignal(transition, app, signal) {
+    Transition.action(transition, action);
+    app == eval(SignalUtil.getAppId(action));
+    signal == eval(SignalUtil.getSignalId(action));
+}
+----
+
+.vql with language specified
+[[app-listing]]
+[source,vql]
+----
+pattern emptyIpAddress(host: HostInstance) {
+    HostInstance.nodeIp(host, "thisIsEmpty");
+}
+
+@Format(color = "#00F8EF", textColor = "#000000")
+@Item(item = state, label = "State $state.description$")
+pattern depoymentStateItem(state: BehaviorState) {
+  BehaviorState(state);
+  neg find deploymentCurrentStateItem(state);
+} or {
+  BehaviorState(state);
+  neg find deploymentNextStateItem(state);
+}
+
+pattern sendTransitionAppSignal(transition, app, signal) {
+    Transition.action(transition, action);
+    app == eval(SignalUtil.getAppId(action));
+    signal == eval(SignalUtil.getSignalId(action));
+}
+----
+
+.Java code for reference
+[[app-listing]]
+[source,java]
+----
+// Hello highlight comment
+@Data
+class BasicClass extends God implements BasicInterface{
+  private static String EMPHASIS = "!!!!!!!!"
+
+  @Override
+  public void doSomethingYouWant(int anInteger, InterfaceManagerProviderFactory factory){
+    if(anInteger > 10){
+      factory.createInterfaceManagerProvider(getProviderDependency(anInteger));
+    } else {
+      System.out.printLn("HUZZZZAAAAAHHH" + EMPHASIS);
+    }
+}
+----
 
 NOTE: ne felejtsd el `:icons: font`
 
