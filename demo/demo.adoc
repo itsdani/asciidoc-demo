@@ -9,12 +9,23 @@ Daniel Segesdi
 :highlightjs-theme: tomorrow
 :highlightjsdir: highlight.js
 // :linkcss:
+:icons: font
 
 == Syntax highlight
 
 === Tools
 
 ==== highlight.js
+
+|===
+|a|b
+
+|c | :white_check_mark:
+
+|d | icon:tags[]
+
+|===
+
 * It's working!
 * Documentation
 
